@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Mandy Miele | Learning Experience Designer</title>
   <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:40px;line-height:1.5}
-    h1{margin:0 0 .25rem} .sub{color:#666;margin:0 0 1rem}
-    a.btn{display:inline-block;margin:.25rem .25rem .25rem 0;padding:.6rem 1rem;border-radius:8px;
-      text-decoration:none;background:#1f73b7;color:#fff;border:1px solid #1f73b7}
-    a.btn.secondary{background:#fff;color:#1f73b7}
-    ul{padding-left:1.2rem}
+    :root{--ink:#1b1b1b;--muted:#666;--brand:#1f73b7;--bg:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         color:var(--ink);background:var(--bg);line-height:1.6}
+    main{max-width:900px;margin:0 auto;padding:48px 20px}
+    h1{margin:0 0 .25rem;font-size:clamp(1.8rem,3vw,2.4rem)}
+    .sub{color:var(--muted);margin:0 0 1rem}
+    .bar{margin:1rem 0 2rem;display:flex;gap:.6rem;flex-wrap:wrap}
+    a.btn{display:inline-block;padding:.6rem 1rem;border-radius:10px;text-decoration:none;
+          border:1px solid var(--brand);background:var(--brand);color:#fff;font-weight:600}
+    a.btn.secondary{background:#fff;color:var(--brand)}
+    h2{margin:2rem 0 .5rem}
+    ul{padding-left:1.1rem;margin:.25rem 0 0}
+    li{margin:.35rem 0}
+    footer{margin:3rem 0 0;color:var(--muted);font-size:.9rem;text-align:center}
   </style>
 </head>
 <body>
-  <h1>Mandy Miele</h1>
-  <p class="sub">Learning Experience Designer · Instructional Design</p>
+  <main>
+    <h1>Mandy Miele</h1>
+    <p class="sub">Learning Experience Designer · Instructional Design</p>
 
-  <p>
-    <a class="btn" href="assets/Mandy_Miele_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
-    <a class="btn secondary" href="https://www.linkedin.com/in/mandy-miele/" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn secondary" href="mailto:MandyMMiele@gmail.com">Contact</a>
-  </p>
+    <div class="bar">
+      <a class="btn" href="assets/Mandy_Miele_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/mandy-miele/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn secondary" href="mailto:MandyMMiele@gmail.com" target="_blank" rel="noopener">Contact</a>
+    </div>
 
-  <h2>Portfolio</h2>
-  <ul>
-    <li><a href="portfolio/active-listening/index.html">Customer First Academy — Active Listening (Rise)</a></li>
-    <li><a href="portfolio/money-moments/index.html">Mandy’s Money Moments (Rise)</a></li>
-    <li><a href="portfolio/sisters-system/index.html">SISTERS System (Rise)</a></li>
-  </ul>
+    <h2>Portfolio</h2>
+    <ul>
+      <li><a href="portfolio/active-listening/index.html" target="_blank" rel="noopener">
+        Customer First Academy — Active Listening (Rise)
+      </a></li>
+      <li><a href="portfolio/money-moments/index.html" target="_blank" rel="noopener">
+        Mandy’s Money Moments (Rise)
+      </a></li>
+      <li><a href="portfolio/sisters-system/index.html" target="_blank" rel="noopener">
+        SISTERS System (Rise)
+      </a></li>
+      <li><a href="portfolio/money-movement-storyboard/Money_Movement_Storyboard_Sample.pdf" target="_blank" rel="noopener">
+        Money Movement — Storyboard Sample (PDF)
+      </a></li>
+      <li><a href="portfolio/feedback-guide/Feedback_Participant_Guide.pdf" target="_blank" rel="noopener">
+        Giving & Receiving Feedback — Participant Guide (PDF)
+      </a></li>
+    </ul>
 
-  <p style="color:#666;font-size:.9rem">Links will work as soon as each project folder is uploaded.</p>
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> Mandy Miele
+    </footer>
+  </main>
 </body>
 </html>
